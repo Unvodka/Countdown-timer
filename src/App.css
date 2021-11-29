@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background: url('./anniversary.jpg') no-repeat;
+  width: 100%;
+  height: 1280px;
+}
+.container {
+  white-space: nowrap;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size : 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  box-shadow: 0px 5px 20px 20px;
+  width: 70%;
+}
+.container h1, .container p {
+  margin: 10% 5%;
+}
+#line {
+  border: none;
+  border-bottom: 2px solid white;
+  width: 60%;
+  margin: auto;
+  margin-top: 3rem;
+}
+#timer {
+  margin-top: 3rem;
+  height: 10rem;
+}
+.btn {
+  padding: 10px;
+  background-color: black;
+  color: wheat;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.calendar {
+  position: absolute;
+  margin-left: 50%; 
+  top: 70vh;
+  background-color: antiquewhite;
+  box-shadow: 0 5px 50px black;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 250px;
+  height: 50px;
+  transform: translate(-50%);
+}
+.calendar p {
+  margin: 1rem;
+}
+.calendar:hover {
+  width: 300px;
+  height: 350px;
+  margin-left: 50%;
+}
+
+@media screen and (max-width: 1099px) {
+  .container {
+    font-size: 30px;
+  }
+  .calendar {
+    top: 55vh;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .container {
+    width: 100%;
+    top: 45%;
+    font-size : 20px;
+  }
+  .container h1 {
+    font-size: 26px;
+  }
+  .container h1, .container p {
+    margin: 20% 10%;
+  }
+  .calendar {
+    top: 55vh;
+  }
+}
+@media screen and (max-width: 329px) {
+  .container {
+    top: 45%;
+    font-size: 14px;
+  }
+  .calendar {
+    top: 55vh;
+  }
+}
